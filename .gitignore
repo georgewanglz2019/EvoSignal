@@ -1,0 +1,8 @@
+# Keep the paper-preview repository free of private implementation and credentials.
+LLMLight-v1/
+openevolve-0.2.26/
+.env
+*.zip
+*.bundle
+__pycache__/
+*.pyc
