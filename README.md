@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <strong>LLM-Guided Evolutionary Design of Modular Traffic Signal Control Programs</strong>
+  <strong>EvoSignal: LLM-Guided Evolutionary Design of Modular Traffic Signal Control Programs</strong>
 </p>
 
 EvoSignal uses an LLM **offline** to evolve inspectable traffic signal control programs. The selected program then chooses phases from traffic observations **without online LLM inference**.
