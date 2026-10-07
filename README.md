@@ -10,21 +10,21 @@ EvoSignal uses an LLM **offline** to evolve inspectable traffic signal control p
 
 ## Motivation: adaptive rules that remain inspectable
 
-Traffic conditions change across networks and demand patterns. Hand-tuning explicit control rules is laborious; neural and LLM controllers can adapt, but their decisions are generally harder to inspect as code and require model inference during operation. EvoSignal uses traffic-performance feedback to revise **both traffic features and phase-priority rules**, then deploys the resulting program directly.
+Traffic conditions change across networks and demand patterns, making repeated manual rule tuning laborious. RL learns adaptive policies from traffic experience, while LLM controllers add pretrained knowledge and language reasoning. EvoSignal uses LLM capabilities during program design to revise **explicit traffic-feature computations and control rules** from traffic-performance feedback, then deploys the selected program directly.
 
 | Capability | Conventional TSC | RL-based TSC | LLM-based TSC | EvoSignal |
 | :--- | :---: | :---: | :---: | :---: |
-| Improves policies from traffic-performance feedback | ✗ | ✓ | ✓ | ✓ |
-| Uses pretrained LLM knowledge | ✗ | ✗ | ✓ | ✓ |
-| Online language reasoning and rationales | ✗ | ✗ | ✓ | ✗ |
-| Automatically revises explicit traffic-feature code | ✗ | ✗ | ✗ | ✓ |
-| Automatically revises explicit phase-priority rules | ✗ | ✗ | ✗ | ✓ |
-| Decision rules inspectable as code | ✓ | ✗ | ✗ | ✓ |
-| Decision rules editable as code | ✓ | ✗ | ✗ | ✓ |
-| No online neural-model inference | ✓ | ✗ | ✗ | ✓ |
-| Expected online computation | Low | Model-dependent | Typically higher | Low |
+| Learns adaptive control policies from experience or feedback | ✗ | ✓ | ✓ | ✓ |
+| Uses pretrained LLM knowledge in design or decision making | ✗ | ✗ | ✓ | ✓ |
+| Supports online reasoning with natural-language rationales | ✗ | ✗ | ✓ | ✗ |
+| Automatically revises explicit traffic-feature computations | ✗ | ✗ | ✗ | ✓ |
+| Automatically revises explicit control rules | ✗ | ✗ | ✗ | ✓ |
+| Exposes executable decision logic for human inspection and editing | ✓ | ✗ | ✗ | ✓ |
+| No online neural-model inference (including LLMs) | ✓ | ✗ | ✗ | ✓ |
 
-*This is a qualitative comparison of representative formulations, not a measured ranking or a claim about every method in each family. “Conventional” denotes predefined rule-based controllers; “RL-based” denotes neural policies. The LLM-based category includes traffic-trained models. Actual online cost depends on implementation, model size, hardware, batching, and token length.*
+*✓ Supported; ✗ not part of the representative formulation. Conventional control denotes predefined rules that can respond to traffic changes without learning a new policy; RL-based control denotes neural policies. LLM-based control includes traffic-trained models such as LightGPT and Traffic-R1.*
+
+*Feature revision changes explicit definitions and computations; inspectable decision logic exposes readable conditions and formulas linking traffic features to decisions. Policy learning occurs during training or program design; “online” refers to phase selection during deployment.*
 
 ## How EvoSignal works
 
