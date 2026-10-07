@@ -1,8 +1,14 @@
-[English](README.md) | [简体中文](README_zh.md)
+<p align="center">
+  <a href="README.md">English</a> | <a href="README_zh.md">简体中文</a>
+</p>
 
-# EvoSignal
+<p align="center">
+  <img src="assets/branding/evosignal-logo.png" alt="EvoSignal logo with glowing traffic lights and a code symbol" width="620">
+</p>
 
-**LLM-Guided Evolutionary Design of Modular Traffic Signal Control Programs**
+<p align="center">
+  <strong>LLM-Guided Evolutionary Design of Modular Traffic Signal Control Programs</strong>
+</p>
 
 EvoSignal uses an LLM **offline** to evolve inspectable traffic signal control programs. The selected program then chooses phases from traffic observations **without online LLM inference**.
 

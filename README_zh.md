@@ -1,8 +1,14 @@
-[English](README.md) | [简体中文](README_zh.md)
+<p align="center">
+  <a href="README.md">English</a> | <a href="README_zh.md">简体中文</a>
+</p>
 
-# EvoSignal
+<p align="center">
+  <img src="assets/branding/evosignal-logo.png" alt="EvoSignal 标志：发光的交通信号灯与代码符号" width="620">
+</p>
 
-**大语言模型引导的模块化交通信号控制程序进化设计**
+<p align="center">
+  <strong>大语言模型引导的模块化交通信号控制程序进化设计</strong>
+</p>
 
 EvoSignal 在**离线设计阶段**利用大语言模型改进可检查的交通信号控制程序。选定的程序直接根据交通观测选择相位，**在线运行时无需调用大语言模型**。
 
