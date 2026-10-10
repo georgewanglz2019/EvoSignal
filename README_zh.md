@@ -10,9 +10,13 @@
   <strong>EvoSignal：大语言模型引导的模块化交通信号控制程序进化设计</strong>
 </p>
 
+<p align="center">
+  <a href="https://arxiv.org/abs/2610.09563v1"><strong>阅读论文 · arXiv:2610.09563</strong></a> | <a href="https://arxiv.org/pdf/2610.09563v1">PDF</a>
+</p>
+
 EvoSignal 在**离线设计阶段**利用大语言模型改进可检查的交通信号控制程序。选定的程序直接根据交通观测选择相位，**在线运行时无需调用大语言模型**。
 
-> **论文展示版。** 本仓库目前只提供研究介绍和图表。预印本公开后会补充 arXiv 链接；完整代码与复现材料计划在论文接收后发布。
+> **预印本已在 arXiv 公开。** 本仓库目前提供研究介绍和图表；完整代码与复现材料计划在论文接收后发布。
 
 ## 研究动机：让自适应控制规则仍然可检查
 
@@ -59,6 +63,22 @@ EvoSignal 在**离线设计阶段**利用大语言模型改进可检查的交通
 
 ## 论文与代码
 
-**论文：** *EvoSignal: LLM-Guided Evolutionary Design of Modular Traffic Signal Control Programs*。预印本发布后补充 arXiv 链接及引用信息。
+**论文：** [*EvoSignal: LLM-Guided Evolutionary Design of Modular Traffic Signal Control Programs*](https://arxiv.org/abs/2610.09563v1)。arXiv:2610.09563，2026。
 
 **代码：** 实现与复现教程计划在论文接收后发布。本展示版仓库暂不包含可运行的实现。
+
+## 引用
+
+如果使用本研究，请引用：
+
+```bibtex
+@misc{wang2026evosignal,
+  title         = {{EvoSignal}: {LLM}-Guided Evolutionary Design of Modular Traffic Signal Control Programs},
+  author        = {Wang, Leizhen and Duan, Peibo and Qin, Zhenlin and Ling, Yancheng and Xu, Jian and Wang, Yue and Wang, Hao and Ma, Zhenliang},
+  year          = {2026},
+  eprint        = {2610.09563},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2610.09563v1}
+}
+```

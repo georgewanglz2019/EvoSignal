@@ -10,9 +10,13 @@
   <strong>EvoSignal: LLM-Guided Evolutionary Design of Modular Traffic Signal Control Programs</strong>
 </p>
 
+<p align="center">
+  <a href="https://arxiv.org/abs/2610.09563v1"><strong>Read the paper · arXiv:2610.09563</strong></a> | <a href="https://arxiv.org/pdf/2610.09563v1">PDF</a>
+</p>
+
 EvoSignal uses an LLM **offline** to evolve inspectable traffic signal control programs. The selected program then chooses phases from traffic observations **without online LLM inference**.
 
-> **Paper preview.** This repository currently shares the research overview and figures. The arXiv link will be added when the preprint is public; the source code and reproduction materials are planned for release after paper acceptance.
+> **Preprint available on arXiv.** This repository currently shares the research overview and figures. The source code and reproduction materials are planned for release after paper acceptance.
 
 ## Motivation: adaptive rules that remain inspectable
 
@@ -59,6 +63,22 @@ The [experimental setup figure](assets/figures/experimental-setup.svg) shows the
 
 ## Paper and code
 
-**Paper:** *EvoSignal: LLM-Guided Evolutionary Design of Modular Traffic Signal Control Programs*. The arXiv URL and citation will be added after the preprint is posted.
+**Paper:** [*EvoSignal: LLM-Guided Evolutionary Design of Modular Traffic Signal Control Programs*](https://arxiv.org/abs/2610.09563v1). arXiv:2610.09563, 2026.
 
 **Code:** The implementation and reproduction guide are being prepared for release after paper acceptance. This preview repository contains no runnable implementation.
+
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@misc{wang2026evosignal,
+  title         = {{EvoSignal}: {LLM}-Guided Evolutionary Design of Modular Traffic Signal Control Programs},
+  author        = {Wang, Leizhen and Duan, Peibo and Qin, Zhenlin and Ling, Yancheng and Xu, Jian and Wang, Yue and Wang, Hao and Ma, Zhenliang},
+  year          = {2026},
+  eprint        = {2610.09563},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2610.09563v1}
+}
+```
