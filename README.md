@@ -44,16 +44,18 @@ Traffic conditions change across networks and demand patterns, making repeated m
 
 ## What the paper reports
 
-- **Waiting time:** Across five scenarios on two real-world road networks, the selected default program reduces waiting time by **16.8–49.2%** relative to the *lowest waiting time among 20 conventional, RL-based, and LLM-based baselines* in each scenario.
-- **Transfer:** A travel-time/queue-length-focused program beats all 20 baselines on travel time, queue length, and waiting time in the J1 search scenario. Reused unchanged in four other scenarios, it ranks in the top three for each metric.
+*The results below follow the revised manuscript (Tables 3–4); the linked arXiv v1 predates this table revision.*
 
-![Paper Table 2: Jinan traffic control results for 20 reference controllers and evolved programs](assets/figures/table-2-jinan.png)
+- **Waiting time:** Across five scenarios on two real-world road networks, the selected default program reduces waiting time by **16.8–49.2%** relative to the *lowest waiting time among 12 conventional, RL-based, and LLM-based baselines* in each scenario.
+- **Transfer:** A travel-time/queue-length-focused program beats all 12 baselines on travel time, queue length, and waiting time in the J1 search scenario. Reused unchanged in four other scenarios, it ranks in the top two for each metric.
 
-*Paper Table 2, Jinan (J1–J3). TT = travel time, QL = queue length, WT = waiting time; lower is better. Each evolved program's rank is computed separately against the same 20 reference controllers. The blue rows identify EvoSignal programs. For the other two scenarios, see [Table 3: Hangzhou (H1–H2)](assets/figures/table-3-hangzhou.png).*
+![Revised Table 3: Jinan traffic control results for 12 reference controllers and evolved programs](assets/figures/table-3-jinan.png)
+
+*Table 3, Jinan (J1–J3). TT = travel time, QL = queue length, WT = waiting time; lower is better. Each evolved program's rank is computed separately against the same 12 reference controllers. The blue rows identify EvoSignal programs. For the other two scenarios, see [Table 4: Hangzhou (H1–H2)](assets/figures/table-4-hangzhou.png).*
 
 ![Relative improvement over Maxpressure for two EvoSignal programs across five scenarios](assets/figures/control-results.svg)
 
-*Figure 4 from the paper. Relative improvement in travel time, queue length, and waiting time over **Maxpressure**; positive values are better. Both programs were evolved on J1 and reused unchanged. This figure uses Maxpressure as its reference, whereas the 16.8–49.2% result above uses the best waiting-time baseline among 20 methods in each scenario.*
+*Figure 4 from the paper. Relative improvement in travel time, queue length, and waiting time over **Maxpressure**; positive values are better. Both programs were evolved on J1 and reused unchanged. This figure uses Maxpressure as its reference, whereas the 16.8–49.2% result above uses the best waiting-time baseline among 12 methods in each scenario.*
 
 ![Search progress and final-score comparison with OpenEvolve and ShinkaEvolve](assets/figures/search-progress.svg)
 
